@@ -22,4 +22,12 @@ func main() {
 	for k, v := range kvs {
 		fmt.Printf("%s -> %s\n", k, v)
 	}
+
+	for k := range kvs {
+		fmt.Println("key:", k)
+	}
+
+	for i, c := range "go" {
+		fmt.Println(i, c)
+	}
 }
