@@ -53,8 +53,13 @@ func main() {
 
 	_, e := f2(42)
 
+	//not sure what this syntax is
+	test, test2 := e.(*argError)
+
 	if ae, ok := e.(*argError); ok {
 		fmt.Println(ae.arg)
 		fmt.Println(ae.prob)
+		fmt.Println(test)
+		fmt.Println(test2)
 	}
 }
